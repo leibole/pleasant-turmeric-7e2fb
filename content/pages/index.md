@@ -2,7 +2,6 @@
 title: Home
 layout: PageLayout
 sections:
-
   - type: LogoSection
     title: "Our Partners"
     logos:
