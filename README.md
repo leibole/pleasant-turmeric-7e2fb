@@ -128,6 +128,7 @@ Create a new react component in `src/components/LogoSection.js`:
 ```js
 import React from 'react';
 
+
 const LogoSection = (props) => {
   const { logos, title } = props;
   return (
