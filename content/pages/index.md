@@ -2,6 +2,14 @@
 title: Home
 layout: PageLayout
 sections:
+
+  - type: LogoSection
+    title: "Our Partners"
+    logos:
+      - name: 'Stackbit'
+        image: '/images/stackbit.svg'
+      - name: 'NextJs'
+        image: '/images/nextdotjs.svg'
   - type: HeroSection
     elementId: homepage-hero-1
     colors: colors-f
