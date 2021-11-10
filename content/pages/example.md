@@ -1,6 +1,7 @@
 ---
 title: Example Page
 layout: PageLayout
+
 sections:
   - type: ContactSection
     colors: colors-e
