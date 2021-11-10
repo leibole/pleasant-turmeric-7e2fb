@@ -3,12 +3,28 @@ title: Home
 layout: PageLayout
 sections:
   - type: LogoSection
-    title: "Our Partners"
+    title: 'Our Partners'
     logos:
       - name: 'Stackbit'
         image: '/images/stackbit.svg'
       - name: 'NextJs'
         image: '/images/nextdotjs.svg'
+  - type: Item
+    title: 'Special Item'
+    subtitle: 'Subtitle'
+    content: 'This is the content of the item'
+    author: 'John Doe'
+    rating: 5
+    actions:
+      - type: Button
+        label: Get Started
+        url: 'https://www.stackbit.com/'
+        style: primary
+        elementId: hero-main-button
+      - type: Button
+        label: Learn More
+        url: 'https://www.stackbit.com/'
+        style: secondary
   - type: HeroSection
     elementId: homepage-hero-1
     colors: colors-f
