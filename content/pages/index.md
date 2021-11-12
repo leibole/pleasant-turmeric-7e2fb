@@ -338,4 +338,64 @@ sections:
       actions:
         justifyContent: flex-start
     type: FeaturedItemsSection
+  - colors: colors-a
+    backgroundWidth: full
+    elementId: ''
+    title: Featured items
+    subtitle: Featured items section example
+    items:
+      - type: Item
+        title: Special Item
+        subtitle: Subtitle
+        content: This is the content of the item
+        author: John Doe
+        rating: 5
+    actions:
+      - type: Button
+        label: Get Started
+        url: /
+        style: primary
+        elementId: hero-main-button
+      - type: Button
+        label: Learn More
+        url: /
+        style: secondary
+    styles:
+      self:
+        height: auto
+        width: wide
+        margin:
+          - mt-0
+          - mb-0
+          - ml-0
+          - mr-0
+        padding:
+          - pt-12
+          - pb-12
+          - pl-4
+          - pr-4
+        alignItems: center
+        justifyContent: center
+        flexDirection: row
+        borderRadius: none
+        borderWidth: 0
+        borderStyle: none
+        borderColor: border-neutral
+      title:
+        fontWeight: 700
+        fontStyle: normal
+        textAlign: left
+        margin:
+          - mt-0
+          - mb-4
+      subtitle:
+        fontWeight: 400
+        fontStyle: normal
+        textAlign: left
+        margin:
+          - mt-0
+          - mb-6
+      actions:
+        justifyContent: flex-start
+    type: FeaturedItemsSection
 ---
