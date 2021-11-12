@@ -10,7 +10,7 @@ sections:
       - name: 'NextJs'
         image: '/images/nextdotjs.svg'
   - type: Item
-    title: 'Special Item'
+    title: 'Special Item!!'
     subtitle: 'Subtitle'
     content: 'This is the content of the item'
     author: 'John Doe'
