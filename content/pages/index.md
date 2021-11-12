@@ -3,21 +3,21 @@ title: Home
 layout: PageLayout
 sections:
   - type: LogoSection
-    title: 'Our Partners'
+    title: Our Partners
     logos:
-      - name: 'Stackbit'
-        image: '/images/stackbit.svg'
-      - name: 'NextJs'
-        image: '/images/nextdotjs.svg'
+      - name: Stackbit
+        image: /images/stackbit.svg
+      - name: NextJs
+        image: /images/nextdotjs.svg
   - type: FeaturedItemsSection
-    title: 'Featured Item!!'
-    subtitle: 'Subtitle'
+    title: Featured Item!
+    subtitle: Subtitle
     items:
       - type: Item
-        title: 'Special Item'
-        subtitle: 'Subtitle'
-        content: 'This is the content of the item'
-        author: 'John Doe'
+        title: Special Item
+        subtitle: Subtitle
+        content: This is the content of the item
+        author: John Doe
         rating: 5
         actions:
           - type: Button
@@ -30,10 +30,10 @@ sections:
             url: 'https://www.stackbit.com/'
             style: secondary
       - type: Item
-        title: 'Special Item'
-        subtitle: 'Subtitle'
-        content: 'This is the content of the item'
-        author: 'John Doe'
+        title: Special Item
+        subtitle: Subtitle
+        content: This is the content of the item
+        author: John Doe
         rating: 5
         actions:
           - type: Button
@@ -59,8 +59,16 @@ sections:
       self:
         height: auto
         width: wide
-        margin: ['mt-0', 'mb-0', 'ml-0', 'mr-0']
-        padding: ['pt-12', 'pb-12', 'pr-4', 'pl-4']
+        margin:
+          - mt-0
+          - mb-0
+          - ml-0
+          - mr-0
+        padding:
+          - pt-12
+          - pb-12
+          - pr-4
+          - pl-4
         alignItems: center
         justifyContent: center
         flexDirection: row
@@ -72,12 +80,16 @@ sections:
         fontWeight: '700'
         fontStyle: normal
         textAlign: left
-        margin: ['mt-0', 'mb-4']
+        margin:
+          - mt-0
+          - mb-4
       subtitle:
         fontWeight: '400'
         fontStyle: normal
         textAlign: left
-        margin: ['mt-0', 'mb-6']
+        margin:
+          - mt-0
+          - mb-6
   - type: HeroSection
     elementId: homepage-hero-1
     colors: colors-f
