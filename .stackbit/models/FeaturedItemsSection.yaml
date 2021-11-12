@@ -1,46 +1,39 @@
 type: object
-name: Item
-label: Item
+name: FeaturedItemsSection
+label: Featured Items section
 labelField: title
 extends:
   - Section
+groups:
+  - sectionComponent
 fieldGroups:
   - name: styles
     label: Styles
   - name: settings
     label: Settings
 fields:
-  - type: enum
-    name: rating
-    label: Rating
-    options:
-      - label: '1'
-        value: 1
-      - label: '2'
-        value: 2
-      - label: '3'
-        value: 3
-      - label: '4'
-        value: 4
-      - label: '5'
-        value: 5
-    default: 1
   - type: string
     name: title
     label: Title
-    default: Item
+    default: Featured items
   - type: string
     name: subtitle
     label: Subtitle
-    default: Featured blog posts section example
-  - type: string
-    name: content
-    label: Content
-    default: Some content for example
-  - type: string
-    name: author
-    label: Author Name
-    default: Earnest Hemingway
+    default: Featured items section example
+  - type: list
+    name: items
+    label: Items
+    items:
+      type: model
+      models:
+        - Item
+    default:
+      - type: Item
+        title: 'Special Item'
+        subtitle: 'Subtitle'
+        content: 'This is the content of the item'
+        author: 'John Doe'
+        rating: 5
   - type: list
     name: actions
     label: Actions
@@ -76,19 +69,19 @@ fields:
         borderColor:
           - value: 'border-primary'
             label: 'Primary color'
-            styleObjectColor: 'primary'
+            color: '$primary'
           - value: 'border-secondary'
             label: 'Secondary color'
-            styleObjectColor: 'secondary'
+            color: '$secondary'
           - value: 'border-neutral'
             label: 'Neutral color'
-            styleObjectColor: 'neutral'
+            color: '$neutral'
           - value: 'border-complementary'
             label: 'Complementary color'
-            styleObjectColor: 'complementary'
+            color: '$complementary'
           - value: 'border-complementary-alt'
             label: 'Complementary alt color'
-            styleObjectColor: 'complementaryAlt'
+            color: '$complementaryAlt'
       title:
         fontWeight: ['400', '700']
         fontStyle: ['normal', 'italic']
@@ -97,9 +90,6 @@ fields:
       subtitle:
         fontWeight: ['400', '700']
         fontStyle: ['normal', 'italic']
-        textAlign: ['left', 'center', 'right']
-        margin: ['twy0:12']
-      content:
         textAlign: ['left', 'center', 'right']
         margin: ['twy0:12']
       actions:
@@ -127,8 +117,5 @@ fields:
         fontStyle: normal
         textAlign: left
         margin: ['mt-0', 'mb-6']
-      content:
-        textAlign: left
-        margin: ['mt-0', 'mb-8']
       actions:
         justifyContent: flex-start

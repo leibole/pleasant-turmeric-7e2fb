@@ -6,7 +6,8 @@ registerComponents({
     // Register all Stackbit components
     ...componentsMap,
     LogoSection: dynamic(() => import('./LogoSection')),
-    Item: dynamic(() => import('./Item'))
+    Item: dynamic(() => import('./Item')),
+    FeaturedItemsSection: dynamic(() => import('./FeaturedItemsSection'))
 
     // Override any static or dynamic component,
     // or register your own dynamic component.
