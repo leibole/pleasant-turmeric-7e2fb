@@ -101,6 +101,7 @@ sections:
           - mb-12
       actions:
         justifyContent: center
+    backgroundWidth: inset
   - type: HeroSection
     elementId: ''
     colors: colors-h
