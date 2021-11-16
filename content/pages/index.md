@@ -5,7 +5,7 @@ sections:
   - type: HeroSection
     elementId: ''
     colors: colors-h
-    title: We write things. Sometimes it’s important, most times it’s not.
+    title: 'We write things. Sometimes it’s important, most times it’s not.'
     actions:
       - type: Button
         url: '#'
@@ -60,7 +60,7 @@ sections:
         justifyContent: flex-start
   - type: FeaturedPostsSection
     elementId: ''
-    variant: variant-b
+    variant: variant-c
     colors: colors-a
     title: Recent posts
     actions:
@@ -75,19 +75,30 @@ sections:
       self:
         height: screen
         width: wide
-        margin: ["mt-0", "mb-0", "ml-0", "mr-0"]
-        padding: ["pt-12", "pb-12", "pr-4", "pl-4"]
+        margin:
+          - mt-0
+          - mb-0
+          - ml-0
+          - mr-0
+        padding:
+          - pt-12
+          - pb-12
+          - pr-4
+          - pl-4
         justifyContent: center
       title:
         fontWeight: '700'
         fontStyle: normal
         textAlign: center
-        margin: ["mb-20"]
+        margin:
+          - mb-20
       subtitle:
         fontWeight: '400'
         fontStyle: normal
         textAlign: center
-        margin: ["mt-0", "mb-12"]
+        margin:
+          - mt-0
+          - mb-12
       actions:
         justifyContent: center
   - type: HeroSection
@@ -106,7 +117,9 @@ sections:
     elementId: contact-form
     colors: colors-f
     title: Get early access
-    text: Sign up your team today to be the first to try out our new product to increase your team’s productivity
+    text: >-
+      Sign up your team today to be the first to try out our new product to
+      increase your team’s productivity
     form:
       type: FormBlock
       elementId: contact-form
@@ -123,8 +136,16 @@ sections:
       self:
         height: auto
         width: wide
-        margin: ["mt-0", "mb-0", "ml-0", "mr-0"]
-        padding: ["pt-12", "pb-24", "pr-4", "pl-4"]
+        margin:
+          - mt-0
+          - mb-0
+          - ml-0
+          - mr-0
+        padding:
+          - pt-12
+          - pb-24
+          - pr-4
+          - pl-4
         alignItems: center
         justifyContent: center
         flexDirection: row-reverse
@@ -132,8 +153,12 @@ sections:
         fontWeight: '700'
         fontStyle: normal
         textAlign: center
-        margin: ["mt-0", "mb-4"]
+        margin:
+          - mt-0
+          - mb-4
       text:
         textAlign: center
-        margin: ["mt-0", "mb-12"]
+        margin:
+          - mt-0
+          - mb-12
 ---
