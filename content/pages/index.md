@@ -2,35 +2,20 @@
 title: Home
 layout: PageLayout
 sections:
-  - type: LogoSection
-    title: Our Partners
-    logos:
-      - name: Stackbit
-        image: /images/stackbit.svg
-      - name: NextJs
-        image: /images/nextdotjs.svg
-  - colors: colors-a
-    backgroundWidth: full
+  - type: HeroSection
     elementId: ''
-    title: Featured items
-    subtitle: Featured items section example
-    items:
-      - type: Item
-        title: Special Item
-        subtitle: Subtitle
-        content: This is the content of the item
-        author: John Doe
-        rating: 5
+    colors: colors-h
+    title: We write things. Sometimes it’s important, most times it’s not.
     actions:
       - type: Button
-        label: Get Started
-        url: /
+        url: '#'
+        label: Download
         style: primary
-        elementId: hero-main-button
-      - type: Button
-        label: Learn More
-        url: /
-        style: secondary
+    feature:
+      type: ImageBlock
+      url: /images/fish-dinner.png
+      altText: Image alt text
+      caption: Image caption
     styles:
       self:
         height: auto
@@ -61,96 +46,6 @@ sections:
           - mb-4
       subtitle:
         fontWeight: 400
-        fontStyle: normal
-        textAlign: left
-        margin:
-          - mt-0
-          - mb-6
-      actions:
-        justifyContent: flex-start
-    type: FeaturedItemsSection
-  - type: FeaturedPostsSection
-    variant: variant-a
-    colors: colors-c
-    backgroundWidth: full
-    title: Blog Posts
-    posts:
-      - content/pages/blog/post-three.md
-      - content/pages/blog/post-two.md
-      - content/pages/blog/post-one.md
-    styles:
-      self:
-        height: auto
-        width: wide
-        margin:
-          - mt-0
-          - mb-0
-        padding:
-          - pt-12
-          - pb-12
-        alignItems: center
-        justifyContent: center
-      title:
-        fontWeight: '700'
-        fontStyle: normal
-        textAlign: center
-        margin:
-          - mt-0
-          - mb-12
-      subtitle:
-        fontWeight: '400'
-        fontStyle: normal
-        textAlign: center
-      actions:
-        justifyContent: center
-  - type: HeroSection
-    elementId: homepage-hero-1
-    colors: colors-f
-    backgroundWidth: full
-    title: This Is A Big Hero Headline
-    text: |
-      Some kind of content for this kind of text field.
-    actions:
-      - type: Button
-        label: Get Started
-        url: 'https://www.stackbit.com/'
-        style: primary
-        elementId: hero-main-button
-      - type: Button
-        label: Learn More
-        url: 'https://www.stackbit.com/'
-        style: secondary
-    feature:
-      type: ImageBlock
-      url: /images/hero.png
-      altText: Image alt text
-      caption: Image caption
-    styles:
-      self:
-        height: auto
-        width: wide
-        margin:
-          - mt-0
-          - mb-0
-        padding:
-          - pt-12
-          - pb-12
-        alignItems: center
-        justifyContent: center
-        flexDirection: row
-        borderRadius: none
-        borderWidth: 0
-        borderStyle: none
-        borderColor: border-neutral
-      title:
-        fontWeight: '700'
-        fontStyle: normal
-        textAlign: left
-        margin:
-          - mt-0
-          - mb-4
-      subtitle:
-        fontWeight: '400'
         fontStyle: normal
         textAlign: left
         margin:
@@ -163,239 +58,82 @@ sections:
           - mb-8
       actions:
         justifyContent: flex-start
-  - type: TestimonialsSection
-    colors: colors-h
-    backgroundWidth: full
-    testimonials:
-      - quote: >-
-          “It’s great to see someone taking action while still maintaining a
-          sustainable fish supply to home cooks.”
-        name: Isabelle Parks
-        title: Head chef at Parks
-        image:
-          type: ImageBlock
-          url: /images/isabelle-parks.jpg
-          altText: Isabelle Parks
-        styles:
-          self:
-            margin:
-              - mt-0
-              - mb-0
-            flexDirection: row
-          quote:
-            textAlign: left
-          name:
-            fontWeight: '700'
-            fontStyle: normal
-            textAlign: left
-          title:
-            fontWeight: '400'
-            fontStyle: normal
-            textAlign: left
-    styles:
-      self:
-        height: auto
-        width: wide
-        margin:
-          - mt-0
-          - mb-0
-        padding:
-          - pt-12
-          - pb-12
-        alignItems: center
-        justifyContent: center
-      title:
-        fontWeight: '700'
-        fontStyle: normal
-        textAlign: center
-      subtitle:
-        fontWeight: '400'
-        fontStyle: normal
-        textAlign: center
-  - type: CtaSection
-    colors: colors-c
-    backgroundWidth: full
-    title: Let's do this
-    text: >-
-      The Stackbit theme is flexible and scalable to every need. It can manage
-      any layout and any screen.
+  - type: FeaturedPostsSection
+    elementId: ''
+    variant: variant-b
+    colors: colors-a
+    title: Recent posts
     actions:
       - type: Button
-        label: Get Started
-        url: 'https://www.stackbit.com/'
+        label: Read all posts
+        url: /
         style: primary
+    posts:
+      - content/pages/blog/post-three.md
+      - content/pages/blog/post-two.md
     styles:
       self:
-        height: auto
+        height: screen
         width: wide
-        margin:
-          - mt-0
-          - mb-0
-        padding:
-          - pt-12
-          - pb-12
-        alignItems: center
-        justifyContent: center
-        flexDirection: row
-      title:
-        fontWeight: '700'
-        fontStyle: normal
-        textAlign: left
-      text:
-        textAlign: left
-      actions:
-        justifyContent: flex-start
-  - type: TextSection
-    colors: colors-f
-    backgroundWidth: full
-    title: The Section Title
-    subtitle: The section subtitle
-    text: >-
-      Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-      doloremque laudantium, totam rem aperiam. Eaque ipsa quae ab illo
-      inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-      Sed ut perspiciatis undeomnis iste natus error sit voluptatem accusantium
-      doloremque laudantium, totam rem aperiam. Eaque ipsa quae ab illo
-      inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-    styles:
-      self:
-        height: auto
-        width: wide
-        margin:
-          - mt-0
-          - mb-0
-        padding:
-          - pt-12
-          - pb-12
-        alignItems: center
+        margin: ["mt-0", "mb-0", "ml-0", "mr-0"]
+        padding: ["pt-12", "pb-12", "pr-4", "pl-4"]
         justifyContent: center
       title:
         fontWeight: '700'
         fontStyle: normal
         textAlign: center
+        margin: ["mb-20"]
       subtitle:
         fontWeight: '400'
         fontStyle: normal
         textAlign: center
-      text:
-        textAlign: center
-  - type: ContactSection
+        margin: ["mt-0", "mb-12"]
+      actions:
+        justifyContent: center
+  - type: HeroSection
+    elementId: ''
     colors: colors-h
-    backgroundWidth: full
-    title: Join our club
-    text: >-
-      We will notify you every time a shipment is heading to your neighborhood,
-      and you could immediatly let us know if you want in or not.
     feature:
       type: ImageBlock
-      url: /images/contact.png
-      altText: Fisherman holding lobster
+      url: /images/fish-dinner.png
+      altText: Image alt text
+      caption: Image caption
+    styles:
+      actions:
+        justifyContent: flex-start
+        width: full
+  - type: ContactSection
+    elementId: contact-form
+    colors: colors-f
+    title: Get early access
+    text: Sign up your team today to be the first to try out our new product to increase your team’s productivity
     form:
       type: FormBlock
       elementId: contact-form
-      destination: ''
       action: /.netlify/functions/submission_created
+      destination: ''
       fields:
         - type: TextFormControl
-          name: name
-          label: Name
-          placeholder: Your name
-          isRequired: true
-          width: 1/2
-        - type: EmailFormControl
           name: email
-          label: Email
-          placeholder: Your email
+          placeholder: Email
           isRequired: true
           width: 1/2
-        - type: TextFormControl
-          name: home-address
-          label: Home address
-          placeholder: Your home address
-          isRequired: true
-          width: full
-        - type: CheckboxFormControl
-          name: updates
-          label: Sign me up to receive updates
-          width: full
       submitLabel: Send Message
     styles:
       self:
         height: auto
         width: wide
-        margin:
-          - mt-0
-          - mb-0
-        padding:
-          - pt-12
-          - pb-12
+        margin: ["mt-0", "mb-0", "ml-0", "mr-0"]
+        padding: ["pt-12", "pb-24", "pr-4", "pl-4"]
         alignItems: center
         justifyContent: center
-        flexDirection: row
+        flexDirection: row-reverse
       title:
         fontWeight: '700'
         fontStyle: normal
-        textAlign: left
+        textAlign: center
+        margin: ["mt-0", "mb-4"]
       text:
-        textAlign: left
-  - colors: colors-a
-    backgroundWidth: full
-    elementId: ''
-    title: Featured items
-    subtitle: Featured items section example
-    items:
-      - type: Item
-        title: Special Item
-        subtitle: Subtitle
-        content: This is the content of the item
-        author: John Doe
-        rating: 5
-    actions:
-      - type: Button
-        label: Get Started
-        url: /
-        style: primary
-        elementId: hero-main-button
-      - type: Button
-        label: Learn More
-        url: /
-        style: secondary
-    styles:
-      self:
-        height: auto
-        width: wide
-        margin:
-          - mt-0
-          - mb-0
-          - ml-0
-          - mr-0
-        padding:
-          - pt-12
-          - pb-12
-          - pl-4
-          - pr-4
-        alignItems: center
-        justifyContent: center
-        flexDirection: row
-        borderRadius: none
-        borderWidth: 0
-        borderStyle: none
-        borderColor: border-neutral
-      title:
-        fontWeight: 700
-        fontStyle: normal
-        textAlign: left
-        margin:
-          - mt-0
-          - mb-4
-      subtitle:
-        fontWeight: 400
-        fontStyle: normal
-        textAlign: left
-        margin:
-          - mt-0
-          - mb-6
-      actions:
-        justifyContent: flex-start
-    type: FeaturedItemsSection
+        textAlign: center
+        margin: ["mt-0", "mb-12"]
 ---
